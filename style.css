@@ -8,6 +8,14 @@ body {
   background-color: #130F1B;
 }
 
+
+
+
+
+
+
+/* Navbar */
+
 .navbar {
   display:flex;
   justify-content: space-between;
@@ -45,5 +53,57 @@ body {
 .navlinks ul a:hover {
   /* color: rgb(63, 32, 177); */
   color: rgb(207, 162, 38);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+    margin: 25px;
+  }
+
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navlinks ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navlinks li {
+    text-align: center;
+    margin: 0.75rem;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
 }
 
