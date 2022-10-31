@@ -8,14 +8,7 @@ body {
   background-color: #130F1B;
 }
 
-
-
-
-
-
-
 /* Navbar */
-
 .navbar {
   display:flex;
   justify-content: space-between;
@@ -74,8 +67,58 @@ body {
 }
 
 
-/* Media Query */
 
+/* Hero */
+.hero {
+  height: 100vh;
+  background-color: #130F1B;
+  background-image: url('assets/hero-background.png');
+}
+
+
+/* Game Cards */
+.games {
+  height: 100vh;
+  background-color: #130F1B;
+}
+
+.games .game-section-title{
+  color: white;
+  font-family: 'Silkscreen', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-containers .card {
+  margin: 2rem;
+  text-align: center;
+  background-color: #1F1B26;
+  color: white;
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card-title {
+  font-family: 'Silkscreen';
+  border-bottom: 2px solid #130F1B;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+}
+
+
+/* Media Query */
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
